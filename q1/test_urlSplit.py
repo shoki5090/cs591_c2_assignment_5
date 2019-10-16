@@ -3,7 +3,10 @@ from urlSplit import *
 
 class test_urlSplit (unittest.TestCase):
 	def test(self):
-
+		# Assumptions : - The input should not be empty. 
+		#				- The input should be in string format
+		#				- The output is a list consisting of [protocol, Domain, Path]
+		#				- If the input has multiple paths, then the path will be outputted as a string list with multiple paths. 
 		# basic test
 		test_cases = "ftp://bu.edu/"
 		expected_output = ["ftp", "bu.edu", ""]
