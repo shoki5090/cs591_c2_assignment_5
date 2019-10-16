@@ -23,8 +23,8 @@ class Testforfstmissing (unittest.TestCase):
     expect_output = 2
     actual_output = fst_missing(self, input_list)
     self.assertEqual(actual_output, expect_output, 'actual output must equal to the expect output')
-    input_list = [1]
-    expect_output = 2
+    input_list = [11,0,10,12,3,2]
+    expect_output = 1
     actual_output = fst_missing(self, input_list)
     self.assertEqual(actual_output, expect_output, 'actual output must equal to the expect output')
   
